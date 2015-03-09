@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  p abc
+  each concac, i in data
+    p= i
+    p= concac.username
+    p= concac.password

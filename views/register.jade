@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  form#regFrm(method = 'post', action = 'regProcess')
+    p
+        input#fullname(type = 'text', name = 'fullname', placeholder = 'Full Name')
+    p
+        input#gender(type = 'text', name = 'gender', placeholder = 'Gender')
+    p   
+        input#email(type = 'text', name = 'email', placeholder = 'Email')
+    p
+        input#dateofbirth(type = 'text', name = 'dateofbirth', placeholder = 'Date of Birth')
+    p
+        input#address(type = 'text', name = 'address', placeholder = 'Address')
+    p
+        input#submit(type = 'submit', value = 'Register')
